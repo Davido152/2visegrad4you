@@ -1,4 +1,4 @@
-package me.davido152.toovisegradforyou;
+package net.davido152.toovisegradforyou;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
