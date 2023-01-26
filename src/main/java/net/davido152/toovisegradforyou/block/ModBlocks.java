@@ -20,7 +20,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TooVisegradForYou.MOD_ID);
 
     public static final RegistryObject<Block> EMPTY_BEER_MUG = registerBlock("empty_beer_mug",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2f)), CreativeModeTab.TAB_MISC);
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2f).noOcclusion()), CreativeModeTab.TAB_MISC);
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
