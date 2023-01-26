@@ -1,6 +1,7 @@
 package net.davido152.toovisegradforyou.block;
 
 import net.davido152.toovisegradforyou.TooVisegradForYou;
+import net.davido152.toovisegradforyou.item.ModCreativeModeTab;
 import net.davido152.toovisegradforyou.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TooVisegradForYou.MOD_ID);
 
     public static final RegistryObject<Block> EMPTY_BEER_MUG = registerBlock("empty_beer_mug",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2f).noOcclusion()), CreativeModeTab.TAB_MISC);
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2f).noOcclusion()), ModCreativeModeTab.TOOVISEGRADFORYOU_TAB);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
