@@ -15,8 +15,6 @@ public class ModItems {
     public static final RegistryObject<Item> HOT_PEPPER = ITEMS.register("hot_pepper",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
-
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

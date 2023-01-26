@@ -22,19 +22,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> EMPTY_BEER_MUG = registerBlock("empty_beer_mug",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2f).noOcclusion()), CreativeModeTab.TAB_MISC);
 
-
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
     }
-
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                            CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(tab)));
     }
-
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
