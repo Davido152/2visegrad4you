@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "toovisegradforyou:empty_beer_mug"
+    "toovisegradforyou:empty_beer_mug",
+    "toovisegradforyou:full_beer_mug"
   ]
 }

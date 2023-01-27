@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> EMPTY_BEER_MUG = registerBlock("empty_beer_mug",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f).noOcclusion()), ModCreativeModeTab.TOOVISEGRADFORYOU_TAB);
 
+    public static final RegistryObject<Block> FULL_BEER_MUG = registerBlock("full_beer_mug",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f).noOcclusion()), ModCreativeModeTab.TOOVISEGRADFORYOU_TAB);
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
