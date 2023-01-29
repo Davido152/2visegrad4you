@@ -1,7 +1,11 @@
 {
   "item.toovisegradforyou.hot_pepper": "Hot Pepper",
+  "item.toovisegradforyou.plastic_bag": "Plastic Bag",
+  "item.toovisegradforyou.empty_beer_mug": "Empty Beer Mug",
+  "item.toovisegradforyou.full_beer_mug": "Full Beer Mug",
 
   "block.toovisegradforyou.empty_beer_mug": "Empty Beer Mug",
+  "block.toovisegradforyou.full_beer_mug": "Full Beer Mug",
 
   "itemGroup.toovisegradforyoutab": "Too Visegrad For You"
 }

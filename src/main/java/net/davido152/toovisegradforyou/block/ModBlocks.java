@@ -1,7 +1,6 @@
 package net.davido152.toovisegradforyou.block;
 
 import net.davido152.toovisegradforyou.TooVisegradForYou;
-import net.davido152.toovisegradforyou.item.ModCreativeModeTab;
 import net.davido152.toovisegradforyou.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,11 +19,10 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TooVisegradForYou.MOD_ID);
 
-    public static final RegistryObject<Block> EMPTY_BEER_MUG = registerBlock("empty_beer_mug",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f).noOcclusion()), ModCreativeModeTab.TOOVISEGRADFORYOU_TAB);
-
-    public static final RegistryObject<Block> FULL_BEER_MUG = registerBlock("full_beer_mug",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f).noOcclusion()), ModCreativeModeTab.TOOVISEGRADFORYOU_TAB);
+    public static final RegistryObject<BeerMugBlock> EMPTY_BEER_MUG = BLOCKS.register("empty_beer_mug",
+            () -> new BeerMugBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.7f).noOcclusion()));
+    public static final RegistryObject<BeerMugBlock> FULL_BEER_MUG = BLOCKS.register("full_beer_mug",
+            () -> new BeerMugBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(0.7f).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

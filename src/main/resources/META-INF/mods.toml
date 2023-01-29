@@ -29,7 +29,7 @@ displayName="2visegrad4you" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="2visegrad4you.png" #optional
 # A text field displayed in the mod UI
-credits="soap-from-your-bathroom" #optional
+credits="soap-from-your-bathroom, Dimetrodon12" #optional
 # A text field displayed in the mod UI
 authors="Davido152" #optional
 # The description text for the mod (multi line!) (#mandatory)

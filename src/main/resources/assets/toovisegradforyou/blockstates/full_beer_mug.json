@@ -1,5 +1,21 @@
 {
   "variants": {
-    "": { "model": "toovisegradforyou:block/full_beer_mug"}
+    "": [
+      {
+        "model": "toovisegradforyou:block/full_beer_mug"
+      },
+      {
+        "model": "toovisegradforyou:block/full_beer_mug",
+        "y": 90
+      },
+      {
+        "model": "toovisegradforyou:block/full_beer_mug",
+        "y": 180
+      },
+      {
+        "model": "toovisegradforyou:block/full_beer_mug",
+        "y": 270
+      }
+    ]
   }
 }
