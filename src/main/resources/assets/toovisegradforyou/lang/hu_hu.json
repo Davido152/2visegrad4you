@@ -1,5 +1,12 @@
 {
   "item.toovisegradforyou.hot_pepper": "Csípős Paprika",
+  "item.toovisegradforyou.plastic_bag": "Nejlonzacskó",
+  "item.toovisegradforyou.empty_beer_mug": "Üres Söröskorsó",
+  "item.toovisegradforyou.full_beer_mug": "Teli Söröskorsó",
+  "item.toovisegradforyou.lignite": "Barnakőszén",
 
-  "block.toovisegradforyou.empty_beer_mug": "Söröskorsó"
+  "block.toovisegradforyou.empty_beer_mug": "Üres Söröskorsó",
+  "block.toovisegradforyou.full_beer_mug": "Teli Söröskorsó",
+
+  "itemGroup.toovisegradforyoutab": "Too Visegrad For You"
 }
