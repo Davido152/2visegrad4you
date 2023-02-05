@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.davido152.toovisegradforyou.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MilkCauldronMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mixins.toovisegradforyou.refmap.json"
+}

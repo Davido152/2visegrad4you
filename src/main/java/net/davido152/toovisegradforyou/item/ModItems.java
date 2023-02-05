@@ -20,6 +20,10 @@ public class ModItems {
             () -> new FullBeerMugItem(ModBlocks.FULL_BEER_MUG.get(), new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.FULL_BEER_MUG)));
     public static final RegistryObject<LigniteItem> LIGNITE = ITEMS.register("lignite",
             () -> new LigniteItem(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB)));
+    public static final RegistryObject<FullBeerCanItem> FULL_SARIS_CAN = ITEMS.register("full_saris_can",
+            () -> new FullBeerCanItem(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.FULL_BEER_CAN)));
+    public static final RegistryObject<EmptyBeerCanItem> EMPTY_SARIS_CAN = ITEMS.register("empty_saris_can",
+            () -> new EmptyBeerCanItem(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
