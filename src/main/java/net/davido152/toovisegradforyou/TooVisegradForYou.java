@@ -3,7 +3,6 @@ package net.davido152.toovisegradforyou;
 import com.mojang.logging.LogUtils;
 import net.davido152.toovisegradforyou.block.ModBlocks;
 import net.davido152.toovisegradforyou.item.ModItems;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -33,7 +32,6 @@ public class TooVisegradForYou {
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("Sziasztok!");
     }
 }

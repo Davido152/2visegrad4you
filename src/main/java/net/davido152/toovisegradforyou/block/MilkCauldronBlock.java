@@ -37,11 +37,14 @@ public class MilkCauldronBlock extends AbstractCauldronBlock {
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        ItemStack itemStack = pPlayer.getItemInHand(pHand);
-
         if(pPlayer.getItemInHand(pHand).is(Items.BUCKET)) {
+            if (!pPlayer.isCreative()) {
+                pPlayer.setItemInHand(pHand, new ItemStack(Items.MILK_BUCKET));
+            } else if(pPlayer.isCreative() && !pPlayer.getInventory().contains(new ItemStack(Items.MILK_BUCKET)))
+            {
+                pPlayer.getInventory().add(new ItemStack(Items.MILK_BUCKET));
+            }
             pLevel.setBlockAndUpdate(pPos, Blocks.CAULDRON.defaultBlockState());
-            pPlayer.setItemInHand(pHand, new ItemStack(Items.MILK_BUCKET));
             pLevel.playSound(pPlayer, pPos, SoundEvents.BUCKET_FILL, SoundSource.BLOCKS, (soundType.getVolume() + 1.0F) / 2.0F, soundType.getPitch() * 0.8F);
             return InteractionResult.SUCCESS;
         } else if(pPlayer.getItemInHand(pHand).is(Items.STICK)) {

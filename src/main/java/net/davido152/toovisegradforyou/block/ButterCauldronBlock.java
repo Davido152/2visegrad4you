@@ -47,7 +47,9 @@ public class ButterCauldronBlock extends AbstractCauldronBlock {
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        pPlayer.getInventory().add(new ItemStack(ModBlocks.BUTTER_BLOCK.get().asItem()));
+        if(pPlayer.isCreative() && !pPlayer.getInventory().contains(new ItemStack(ModBlocks.BUTTER_BLOCK.get())) || !pPlayer.isCreative()) {
+            pPlayer.getInventory().add(new ItemStack(ModBlocks.BUTTER_BLOCK.get().asItem()));
+        }
         pLevel.setBlockAndUpdate(pPos, Blocks.CAULDRON.defaultBlockState());
         pLevel.playSound(pPlayer, pPos, SoundEvents.SLIME_BLOCK_BREAK, SoundSource.BLOCKS, 0.8f, 1.0f);
         return InteractionResult.SUCCESS;
