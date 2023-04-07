@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "toovisegradforyou:raw_schnitzel"
+  },
+  "result": "toovisegradforyou:schnitzel",
+  "experience": 0.35,
+  "cookingtime": 200
+}

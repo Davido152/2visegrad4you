@@ -24,6 +24,10 @@ public class ModItems {
             () -> new FullBeerCanItem(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.FULL_BEER_CAN)));
     public static final RegistryObject<EmptyBeerCanItem> EMPTY_SARIS_CAN = ITEMS.register("empty_saris_can",
             () -> new EmptyBeerCanItem(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB)));
+    public static final RegistryObject<Item> SCHNITZEL = ITEMS.register("schnitzel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.SCHNITZEL)));
+    public static final RegistryObject<Item> RAW_SCHNITZEL = ITEMS.register("raw_schnitzel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.RAW_SCHNITZEL)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

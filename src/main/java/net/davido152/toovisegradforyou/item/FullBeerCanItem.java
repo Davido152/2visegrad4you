@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 public class FullBeerCanItem extends Item {
-    private ItemStack beerMug;
+    private ItemStack beerCan;
 
     public FullBeerCanItem(Properties pProperties) {
         super(pProperties);
@@ -14,12 +14,10 @@ public class FullBeerCanItem extends Item {
 
     @Override
     public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
-        if(pStack.is(ModItems.FULL_SARIS_CAN.get())) {
-            beerMug = new ItemStack(ModItems.EMPTY_SARIS_CAN.get());
-        }
+        beerCan = pLivingEntity.getItemInHand(pLivingEntity.getUsedItemHand());
 
         if(pLivingEntity instanceof Player && !((Player) pLivingEntity).isCreative()) {
-            ((Player) pLivingEntity).getInventory().add(beerMug);
+            ((Player) pLivingEntity).getInventory().add(beerCan);
         }
         return super.finishUsingItem(pStack, pLevel, pLivingEntity);
     }

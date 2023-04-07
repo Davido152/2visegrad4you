@@ -10,4 +10,6 @@ public class ModFoods {
             .effect(new MobEffectInstance(MobEffects.CONFUSION, 150), 1f).build());
     public static final FoodProperties FULL_BEER_CAN = (new FoodProperties.Builder().nutrition(5).saturationMod(0.6f)
             .effect(new MobEffectInstance(MobEffects.CONFUSION, 150), 1f).build());
+    public static final FoodProperties SCHNITZEL = (new FoodProperties.Builder().nutrition(10).saturationMod(0.7f).build());
+    public static final FoodProperties RAW_SCHNITZEL = (new FoodProperties.Builder().nutrition(4).saturationMod(0.3f).build());
 }
