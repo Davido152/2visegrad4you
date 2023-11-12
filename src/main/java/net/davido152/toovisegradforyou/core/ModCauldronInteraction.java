@@ -1,6 +1,5 @@
 package net.davido152.toovisegradforyou.core;
 
-import com.mojang.logging.LogUtils;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import net.davido152.toovisegradforyou.block.ModBlocks;
 import net.minecraft.Util;
@@ -22,7 +21,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import org.slf4j.Logger;
 
 import java.util.Map;
 import java.util.function.Predicate;
@@ -38,11 +36,6 @@ public interface ModCauldronInteraction extends CauldronInteraction {
     };
     CauldronInteraction CHURN_BUTTER = (pState, pLevel, pPos, pPlayer, pHand, pFilledStack) -> {
         return churnButter(pLevel, pPos, pPlayer);
-    };
-    CauldronInteraction TAKE_BUTTER =  (pBlockState, pLevel, pPos, pPlayer, pInteractionHand, pFilledStack) -> {
-        return takeBlock(pBlockState, pLevel, pPos, pPlayer, new ItemStack(ModBlocks.BUTTER_BLOCK.get()), (pState) -> {
-            return true;
-        }, SoundEvents.SLIME_BLOCK_BREAK);
     };
 
     static Object2ObjectOpenHashMap<Item, CauldronInteraction> newInteractionMap() {
