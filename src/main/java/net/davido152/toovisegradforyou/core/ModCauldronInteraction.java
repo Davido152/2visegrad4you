@@ -19,19 +19,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 
 import java.util.Map;
 import java.util.function.Predicate;
 
 public interface ModCauldronInteraction extends CauldronInteraction {
-    Logger LOGGER = LogUtils.getLogger();
-
     Map<Item, CauldronInteraction> MILK = newInteractionMap();
     Map<Item, CauldronInteraction> BUTTER = newInteractionMap();
     CauldronInteraction FILL_MILK = (pState, pLevel, pPos, pPlayer, pHand, pFilledStack) -> {
