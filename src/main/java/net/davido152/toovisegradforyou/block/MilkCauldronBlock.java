@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.AbstractCauldronBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.HitResult;
-import org.jetbrains.annotations.NotNull;
 
 public class MilkCauldronBlock extends AbstractCauldronBlock {
     public MilkCauldronBlock(Properties pProperties) {

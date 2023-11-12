@@ -31,12 +31,6 @@ public interface ModCauldronInteraction extends CauldronInteraction {
     CauldronInteraction FILL_MILK = (pState, pLevel, pPos, pPlayer, pHand, pFilledStack) -> {
         return emptyBucket(pLevel, pPos, pPlayer, pHand, pFilledStack, ModBlocks.MILK_CAULDRON.get().defaultBlockState(), SoundEvents.BUCKET_EMPTY);
     };
-    CauldronInteraction REAL = new CauldronInteraction() {
-        @Override
-        public InteractionResult interact(BlockState pBlockState, Level pLevel, BlockPos pBlockPos, Player pPlayer, InteractionHand pHand, ItemStack pStack) {
-            return null;
-        }
-    };
     CauldronInteraction FILL_BUTTER = (pState, pLevel, pPos, pPlayer, pHand, pFilledStack) -> {
         return fillWithBlock(pState, pLevel, pPos, pPlayer, pHand, pFilledStack, ModBlocks.BUTTER_CAULDRON.get().defaultBlockState(), SoundEvents.SLIME_BLOCK_PLACE);
     };
