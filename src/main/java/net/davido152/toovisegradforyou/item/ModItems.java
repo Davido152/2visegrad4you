@@ -2,11 +2,19 @@ package net.davido152.toovisegradforyou.item;
 
 import net.davido152.toovisegradforyou.TooVisegradForYou;
 import net.davido152.toovisegradforyou.block.ModBlocks;
-import net.minecraft.world.item.Item;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Map;
+import java.util.function.Supplier;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -28,6 +36,18 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.SCHNITZEL)));
     public static final RegistryObject<Item> RAW_SCHNITZEL = ITEMS.register("raw_schnitzel",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.RAW_SCHNITZEL)));
+    public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TOOVISEGRADFORYOU_TAB).food(ModFoods.BUTTER)) {
+                @Override
+                public int getUseDuration(ItemStack pStack) {
+                    return 24;
+                }
+            });
+
+    public static final RegistryObject<Item> SALT = ITEMS.register("salt",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    public static final RegistryObject<Item> SULFUR = ITEMS.register("sulfur",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

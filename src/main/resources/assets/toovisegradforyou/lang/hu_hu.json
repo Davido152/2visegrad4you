@@ -4,16 +4,21 @@
   "item.toovisegradforyou.empty_beer_mug": "Üres Söröskorsó",
   "item.toovisegradforyou.full_beer_mug": "Teli Söröskorsó",
   "item.toovisegradforyou.lignite": "Barnakőszén",
-  "item.toovisegradforyou.empty_saris_can": "Üres Šariš 10% Doboz",
-  "item.toovisegradforyou.full_saris_can": "Teli Šariš 10% Doboz",
+  "item.toovisegradforyou.empty_saris_can": "Üres Šariš 10° Doboz",
+  "item.toovisegradforyou.full_saris_can": "Teli Šariš 10° Doboz",
   "item.toovisegradforyou.schnitzel": "Rántott Hús",
-  "item.toovisegradforyou.raw_shnitzel": "Nyers Rántott Hús",
+  "item.toovisegradforyou.raw_schnitzel": "Nyers Rántott Hús",
+  "item.toovisegradforyou.butter": "Vaj",
+  "item.toovisegradforyou.salt": "Só",
+  "item.toovisegradforyou.sulfur": "Kén",
 
   "block.toovisegradforyou.empty_beer_mug": "Üres Söröskorsó",
   "block.toovisegradforyou.full_beer_mug": "Teli Söröskorsó",
   "block.toovisegradforyou.milk_cauldron": "Tej Üst",
   "block.toovisegradforyou.butter_cauldron": "Vaj Üst",
   "block.toovisegradforyou.butter_block": "Vajblokk",
+  "block.toovisegradforyou.lignite_ore": "Barnakőszénérc",
+  "block.toovisegradforyou.lignite_block": "Barnakőszénblokk",
 
   "itemGroup.toovisegradforyoutab": "Too Visegrad For You"
 }

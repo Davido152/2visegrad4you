@@ -17,6 +17,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -34,6 +35,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BUTTER_BLOCK = registerBlock("butter_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.CLAY, MaterialColor.QUARTZ).speedFactor(0.8f).sound(SoundType.SLIME_BLOCK)),
             ModCreativeModeTab.TOOVISEGRADFORYOU_TAB);
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

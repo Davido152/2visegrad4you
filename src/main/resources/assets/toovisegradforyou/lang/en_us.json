@@ -4,16 +4,21 @@
   "item.toovisegradforyou.empty_beer_mug": "Empty Beer Mug",
   "item.toovisegradforyou.full_beer_mug": "Full Beer Mug",
   "item.toovisegradforyou.lignite": "Lignite",
-  "item.toovisegradforyou.empty_saris_can": "Empty Šariš 10% Can",
-  "item.toovisegradforyou.full_saris_can": "Full Šariš 10% Can",
+  "item.toovisegradforyou.empty_saris_can": "Empty Šariš 10° Can",
+  "item.toovisegradforyou.full_saris_can": "Full Šariš 10° Can",
   "item.toovisegradforyou.schnitzel": "Schnitzel",
-  "item.toovisegradforyou.raw_shnitzel": "Raw Schnitzel",
+  "item.toovisegradforyou.raw_schnitzel": "Raw Schnitzel",
+  "item.toovisegradforyou.butter": "Butter",
+  "item.toovisegradforyou.salt": "Salt",
+  "item.toovisegradforyou.sulfur": "Sulfur",
 
   "block.toovisegradforyou.empty_beer_mug": "Empty Beer Mug",
   "block.toovisegradforyou.full_beer_mug": "Full Beer Mug",
   "block.toovisegradforyou.milk_cauldron": "Milk Cauldron",
   "block.toovisegradforyou.butter_cauldron": "Butter Cauldron",
   "block.toovisegradforyou.butter_block": "Butter Block",
+  "block.toovisegradforyou.lignite_ore": "Lignite Ore",
+  "block.toovisegradforyou.lignite_block": "Lignite Block",
 
   "itemGroup.toovisegradforyoutab": "Too Visegrad For You"
 }

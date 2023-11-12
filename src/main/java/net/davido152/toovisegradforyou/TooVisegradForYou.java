@@ -3,6 +3,7 @@ package net.davido152.toovisegradforyou;
 import com.mojang.logging.LogUtils;
 import net.davido152.toovisegradforyou.block.ModBlocks;
 import net.davido152.toovisegradforyou.item.ModItems;
+import net.davido152.toovisegradforyou.server.ModBootstrap;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +24,7 @@ public class TooVisegradForYou {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
+
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
@@ -31,6 +33,9 @@ public class TooVisegradForYou {
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        ModBootstrap.bootStrap();
+        ModBootstrap.validate();
+
         // some preinit code
         LOGGER.info("Sziasztok!");
     }

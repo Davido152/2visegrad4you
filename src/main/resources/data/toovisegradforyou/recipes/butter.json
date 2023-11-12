@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "toovisegradforyou:butter_block"
+    }
+  ],
+  "result": {
+    "item": "toovisegradforyou:butter",
+    "count": 9
+  }
+}
